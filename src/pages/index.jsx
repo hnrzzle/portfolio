@@ -162,7 +162,8 @@ const Index = () => (
             Hello, <br /> I'm Henrique.
           </BigTitle>
           <Subtitle>
-            I'm a Full-Stack Developer with a passion for creating awesome applications that look and feel great.
+            I'm a Full-Stack Developer with a passion for learning a desire to create awesome applications that look and
+            feel great.
           </Subtitle>
         </Hero>
       </Content>
