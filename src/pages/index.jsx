@@ -70,7 +70,7 @@ const ProjectsWrapper = styled.div`
   ${tw('flex flex-wrap justify-between mt-8')};
   display: grid;
   grid-gap: 4rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   @media (max-width: 1200px) {
     grid-gap: 3rem;
   }
@@ -182,7 +182,7 @@ const Index = () => (
               bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
               codeLink="https://github.com/hnrzzle"
             >
-              This project is my entry to Adobe's #ChallengeYourPerspective contest.
+              Rally is a social media platform centered around being active. Form a group and meet new people today!
             </ProjectCard>
             <ProjectCard
               title="Harry Potter"

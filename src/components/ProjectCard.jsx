@@ -18,6 +18,7 @@ const Wrapper = styled.div`
 const Text = styled.div`
   ${tw('opacity-75 font-sans text-sm md:text-base')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
 `;
 
 const Title = styled.div`
@@ -35,12 +36,17 @@ const Github = styled.div`
 `;
 
 const ProjectCard = ({ title, link, codeLink, children, bg }) => (
-  <Wrapper target="_blank" rel="noopener noreferrer" bg={bg}>
+  <Wrapper bg={bg}>
+    <Title>
+      <h1>{title}</h1>
+    </Title>
     <Text>{children}</Text>
-    <Title>{title}</Title>
+    <Title>
+      <h3>Tech Used:</h3>
+    </Title>
     <Github>
       <div>
-        <a href={codeLink}>
+        <a href={codeLink} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon icon={faGithub} size="4x" />
         </a>
       </div>
