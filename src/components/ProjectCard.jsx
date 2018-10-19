@@ -4,11 +4,14 @@ import PropTypes from 'prop-types';
 import styled from 'react-emotion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import rally from '../images/projects/rally.png';
 
 const Wrapper = styled.div`
+  ${tw('shadow-lg relative no-underline rounded-lg px-8 text-white')};
   width: 100%;
-  ${tw('shadow-lg relative no-underline rounded-lg px-8 py-8 md:py-24 text-white')};
+  padding-top: 0px;
   background: ${props => props.bg};
+  padding-bottom: 1rem;
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   &:hover {
     transform: translateY(-5px);
@@ -24,6 +27,7 @@ const Text = styled.div`
 const Title = styled.div`
   ${tw('text-white uppercase text-2xl md:text-3xl xl:text-4xl tracking-wide font-sans pt-8')};
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  padding-top: 0;
 `;
 
 const Github = styled.div`
@@ -35,11 +39,16 @@ const Github = styled.div`
   }
 `;
 
+const FeaturedImage = styled.img`
+  max-width: 100%;
+`;
+
 const ProjectCard = ({ title, link, codeLink, children, bg }) => (
   <Wrapper bg={bg}>
     <Title>
       <h1>{title}</h1>
     </Title>
+    <FeaturedImage alt="project screenshot" src={rally} />
     <Text>{children}</Text>
     <Title>
       <h3>Tech Used:</h3>
