@@ -12,7 +12,7 @@ import { rotate, UpDown, UpDownWide, waveAnimation } from '../styles/animations'
 import { hidden } from '../styles/utils';
 import { colors } from '../../tailwind';
 import triangle from '../images/triangle.svg';
-import avatar from '../images/avatar.jpg';
+import headshot from '../images/headshot.jpg';
 import '../styles/global';
 
 const Divider = styled(ParallaxLayer)`
@@ -186,7 +186,7 @@ const Index = () => (
               Rally is a social media platform centered around being active. Form a group and meet new people today!
             </ProjectCard>
             <ProjectCard
-              title="Harry Potter"
+              title="Image Gallery"
               link="https://www.behance.net/gallery/52915793/Harry-Potter"
               bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
               codeLink="https://github.com/hnrzzle"
@@ -194,7 +194,7 @@ const Index = () => (
               I entered the DOCMA 2017 award with this Harry Potter inspired image.
             </ProjectCard>
             <ProjectCard
-              title="Tomb Raider"
+              title="Secret Spots"
               link="https://www.behance.net/gallery/43907099/Tomb-Raider"
               bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
               codeLink="https://github.com/hnrzzle"
@@ -202,7 +202,7 @@ const Index = () => (
               Recreation of a Tomb Raider Wallpaper (Fan Art)
             </ProjectCard>
             <ProjectCard
-              title="Eagle"
+              title="Bird's Eye View"
               link="https://www.behance.net/gallery/38068151/Eagle"
               bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
               codeLink="https://github.com/hnrzzle"
@@ -258,7 +258,7 @@ const Index = () => (
         <Inner>
           <Title>About</Title>
           <AboutHero>
-            <Avatar src={avatar} alt="John Doe" />
+            <Avatar src={headshot} alt="Henrique Oliveira avatar image" />
             <AboutSub>
               The English language can not fully capture the depth and complexity of my thoughts. So I'm incorporating
               Emoji into my speech to better express myself. Winky face.
